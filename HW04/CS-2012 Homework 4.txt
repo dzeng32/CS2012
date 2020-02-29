@@ -1,0 +1,11 @@
+This is second part of a two-part lab. Start with your code from Homework 2.  Late work will be severely penalized.
+Important notes:
+Use Console I/O (Scanner and System.out) for all user I/O in this lab.
+Do not hard code data file paths or filenames; always ask the user for them.
+Complete the Monster Attack project by doing the following:
+ 
+
+Replace the array of MonsterAttacks with an ArrayList of MonsterAttacks.  This will require changes in several methods.  You will need to be able to handle any number of MonsterAttacks the user chooses to input.
+Add a method to AttackMonitor that saves the list of attacks to a comma separated values file. Iterate through the list, and for each attack, get each field using the getters from MonsterAttack. Write each value to the file, following each one except the last with a comma. Save the date as a single String in the format MM/DD/YYYY. After you have written out all the data for one attack, write out a newline. Add an item to the main menu that calls this method.
+Add a method that clears the list of monster attacks, then uses a Scanner to read data from a .csv file, uses it to instantiate MonsterAttack objects, and adds the attacks to the list. This method must be able to read the files you write out in the method described above. You will need to use String's split() method here. Add an item to the main menu that calls this method. Make sure you can input attack data, save to a file, quit the program, start the program again, read your output file, and show the data from the file.
+Turn in your .java code files on CSNS without using any file compression.

@@ -1,0 +1,1 @@
+Begin with your code for Homework 4.  Create a JavaFX GUI for this application.  JavaFX has a Table element, but it is not easy to use.  You may want to show the output by just putting a large String together (with appropriate line breaks) and displaying it in a Text or Label. 

@@ -1,0 +1,10 @@
+Write a Java class with methods that perform various operations on an array of doubles.
+
+Follow the instructions carefully. In particular, write methods where directed; do not stuff main() with code that should be elsewhere. All of the methods that take arrays as parameters must work with arrays of any length.
+
+Write a method that creates an array of ten nonnegative doubles, initializes it with values taken from console input (ie, a Scanner from System.in) inside a loop, and returns a reference to the array. Validate the user input to make sure the program does not crash if the user enters invalid data. For each double you request, keep asking until the user enters a valid nonnegative double.
+Write a void method that takes an array of doubles as its only parameter, calculates the cube of each value in the array, and prints out each result. This method should not change the values in the array.
+Write a method that takes an array of doubles as its only parameter and replaces any value exceeding 250 with the value 250. This method should be void; in other words it should not return anything. Be sure you understand how array references are sent to methods.
+Write a method that takes an array of doubles as its only parameter, copies the array, replaces each value in the old array with its inverse (1/x), and returns a reference to the new array. Be sure you understand the difference between copying an array and copying an array reference, or you will not do this part correctly.
+Write a void method that takes an array of doubles as its only parameter and prints out all the values.
+main() should call the input method, then send the array to the print method, then run each of the other methods, using the print method to print the current values after each method is done. After running the method that creates a new array, print out both the original array and the one returned by the method. If the two arrays contain the same values, the method that makes a copy and calculates the inverses is probably not correct.

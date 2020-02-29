@@ -1,0 +1,33 @@
+Write an application that models a groups of scavengers eating a scrap dropped at a picnic
+
+For all these classes, write whatever getters, setters, toString() methods, constructors, or other methods you need.
+
+Scrap has a weight in grams (int) and a String that describes what kind of scrap it is (for example, "moldy cheese").  It also has a reduce(int amount) method.  If the amount parameter is no greater than the remaining weight of the scrap, reduce() reduces the weight it by that amount.  If the amount is greater than the remaining weight of the scrap, reduce() reduces the weight to 0.  Either way, reduce() returns the amount by which the weight of the scrap was actually reduced.
+
+Scavenger has a mouthCapacity and a String to indicate what kind of Scavenger the animal is (for example, "Ant.")  It also has a bite() method, which takes a Scrap as parameter and calls reduce() on the Scrap.  It prints out a message showing the result, including the type of scavenger, the size of the scrap, and the amount actually eaten (for example, "Vulture bites 651 mg scrap of moldy cheese, and gets 50 mg")
+
+Scavenger has two subclasses, Ant and Vulture.  Every Ant has a mouthCapacity of 1 gram, and every Vulture has a mouth capacity of 50 grams.  Ant and Vulture will need constructors and toString() methods, but they don't necessarily need anything else.
+
+The class Picnic has a Scrap, a List of Scavengers, and whatever other methods you need.  It also has a feast() method, in which each Scavenger takes turns eating from the Scrap until its weight reaches 0, at which time it prints a message indicating that the Scrap is gone.  This will require nested loops; it might take any number of turns for each scavenger before the Scrap is finished.  The outer loop continues until the Scrap is gone, and the inner loop iterates through the list of Scavengers, giving each one a turn.
+
+You may either write a driver class or write a main() in Picnic.  Either way, create a Picnic, add a Scrap, add one Vulture and a random number of Ants, and call feast().
+
+ 
+
+Here is output from a sample run of my solution:
+
+Ant bites 1000 mg scrap of moldy cheese and gets 1 mg
+Ant bites 999 mg scrap of moldy cheese and gets 1 mg
+Ant bites 998 mg scrap of moldy cheese and gets 1 mg
+Ant bites 997 mg scrap of moldy cheese and gets 1 mg
+Ant bites 996 mg scrap of moldy cheese and gets 1 mg
+Ant bites 995 mg scrap of moldy cheese and gets 1 mg
+Vulture bites 994 mg scrap of moldy cheese and gets 50 mg
+
+[ many lines omitted]
+
+Ant bites 45 mg scrap of moldy cheese and gets 1 mg
+Ant bites 44 mg scrap of moldy cheese and gets 1 mg
+Ant bites 43 mg scrap of moldy cheese and gets 1 mg
+Vulture bites 42 mg scrap of moldy cheese and gets 42 mg
+No more moldy cheese!

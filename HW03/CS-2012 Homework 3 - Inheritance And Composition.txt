@@ -1,0 +1,27 @@
+Write an application that models courses, students, and faculty members in a university.
+General Directions
+Use proper Java naming conventions.
+From now on it will be assumed that each class you create will have private instance variables and any necessary getters and setters. I will no longer explicitly ask you to create these.
+Be sure to implement a toString() for each class.
+Use a Scanners and System.out.println for the I/O in this lab.  Think carefully about how to organize the input/output for this lab *before* you begin coding.
+Address Class
+An address has a street number, street name, city, state or province, and country.
+
+Course Class
+A course has a course identifier (eg, EE-132) and a number of units (int).
+
+Person Class
+A Person has a name and an Address (represented by an object of class Address, not a String). Note that the subclasses of Person inherit the fields and methods of Person. You may need to override some of the methods in the subclasses.
+
+Student Class
+Student is a subclass of Person. In addition to the data inherited from Person, a student has CIN and a course schedule represented by an ArrayList of Courses (objects of class Course). You must provide ways for a Student to add and drop an existing Course.
+
+FacultyMember Class
+FacultyMember is also subclass of Person. A FacultyMember has an employee id number and a teaching schedule, which is an ArrayList of Courses. Provide a way to assign a FacultyMember to teach an existing Course and for a Faculty member to find a class in the list and drop it.
+
+ 
+University Class
+Write a University class that maintains lists of Students, Courses, and FacultyMembers and has an instance method containing a menu that provides ways to list them and to create them and add them to the list. Provide ways to delete Students and FacultyMembers and for Students and FacultyMembers to add and delete Courses from their course schedules. However, you do not need to provide a way to delete a Course from the list of Courses. Do not create a new Course when a Student adds or when a faculty member is assigned to teach; let the user choose a Course from the list.
+
+Driver Class
+Write a simple Driver class that instantiates a University and calls the correct method to get the menu.

@@ -1,0 +1,28 @@
+.pane{
+	-fx-font-size: 250%;
+	-fx-padding: 20px;
+}
+
+.grid{
+	-fx-font-size: 200%;
+}
+
+.font{
+	-fx-background-color: #f1c927;
+}
+
+.barBG{	
+	-fx-background-color: #00FFFF;	
+}
+
+.labelBG{
+	-fx-background-color: #FF0000;
+}
+
+.labelReset{
+	-fx-background-color: #f4f4f4;
+}
+
+.align{
+	-fx-alignment: center;
+}

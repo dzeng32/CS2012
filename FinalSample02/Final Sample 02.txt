@@ -1,0 +1,32 @@
+Write a Java application that meets these specifications. This question on the actual final will be on paper and will be closed-book, closed-notes.
+
+ 
+
+The abstract class Shape3D has
+
+ 
+
+a protected variable to track the volume of a three-dimensional object
+
+a concrete method isLargerThan(Shape3D), which returns true if the current shape is larger (has a greater volume) than the shape passed in as a parameter, otherwise false.
+
+A concrete getVolume() method
+
+An abstract getEquivalentCube() method, which returns a Cube with the same volume as the current shape.
+
+ 
+
+Shape 3D is extended by the subclasses Sphere and Cube. Each of these has a constructor which takes one double as a parameter and calculates the volume of the shape. The subclasses may need instance variables.
+
+ 
+
+The volume of a cube is side ^ 3. Cube’s getEquivalentCube() method should just return the cube itself (this).
+
+ The volume of a sphere is 4/3 PI * radius ^ 3. Use Math.PI and Math.pow, and be careful about the integer division. Sphere’s getEquivalentCube() method calls Cube’s constructor, sending the appropriate value for the side length. The easiest way to calculate this is to take the cube root of the volume of the circle (Math.pow(volume, 1.0/3).
+ 
+
+ 
+
+Each of the subclasses must have a toString() that returns a String like this:
+
+cube with side 5.0 and volume 125.0

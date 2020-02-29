@@ -1,0 +1,37 @@
+Create a multi-class application to report on monster attacks.  You will need a class that represents a monster attack, one that aggregates monster attacks by keeping track of an array, and a driver class.
+
+Part A, 40 pts
+
+Create a MonsterAttack class.  MonsterAttack has the following private data variables.  Think about the correct data type to use for each variable:
+
+monsterName (eg Godzilla)
+
+attackLocation (eg Tokyo)
+
+damagesInMillionUSD (eg 123.45)
+
+date (eg October 27, 1954, OK to use the Java Date class)
+
+Create whatever constructors, getters, and setters you need.  Be sure to write a reasonable toString().
+
+ 
+
+Part B, 40 pts
+
+Create an AttackMonitor class.  AttackMonitor contains an array of Monster attacks and  has methods to generate reports on the attacks.  It should include at least these methods:
+
+reportAttacks() creates an array of five attacks, takes user input using a Scanner from System.in, creates the attacks (instances of MonsterAttack), and adds the attacks to the array.
+
+showAttacks() iterates through the array and prints out the result of running the toString() of each attack.
+
+showDamages() calculates and prints the total amount of damages for all attacks and the mean damages
+
+showMonsters() shows the names of all monsters involved in the attacks and the number of attacks for each monster (ie: "Godzilla, 3 attack(s); Bigfoot, 1 attack(s); Yeti: 1 attack(s)).  Since we may discover new monsters after compile time, you must find the names using a getter in MonsterAttack.  Don't hard code the monster names.
+
+findEarliestAttack() prints out the to String() of the earliest MonsterAttack in the array.
+
+ 
+
+Part C, 20 pts
+
+Create a MonitorDriver class.  This class should be the only one with a main() method.  Think about what it needs to do to show that the other classes work correctly.  The driver should only call methods from AttackMonitor, not methods from MonsterAttack.

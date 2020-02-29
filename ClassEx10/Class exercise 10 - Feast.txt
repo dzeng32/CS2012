@@ -1,0 +1,31 @@
+The abstract class Portion represents a portion of food. It has a variable that represents the number of calories in a serving. Pancake and Cupcake both extend Portion. Pancake's constructor takes a single argument, the radius of the Pancake, and sets the number of calories in the pancake to 10 times the area, which you can calculate this way: area = PI * radius ^ 2 . Cupcake's constructor takes two arguments, radius and height, and sets the number of calories in the cupcake to 4 * the volume of the cupcake (ie, to 4 * PI * radius ^ 2 * height.) Cupcake and Pancake each need a toString().
+
+The class Customer represents a restaurant patron. Customer needs an eat() method that takes a Portion as it's only argument and prints a message showing that the Customer has eaten the Portion. Once the customer has eaten 10000 calories, he immediately explodes.
+
+Write these classes and a driver with a main method that creates a Customer and feeds him as many Portions as he can handle. Use a loop that continues until the customer explodes. Each time through the loop, randomly choose Pancake or Cupcake (note that you can use Random's nextBoolean() to randomly choose between two values). Create a Pancake or Cupcake with random dimensions and call Customer's eat() method, sending it the Portion as its argument. Once the customer has expired, show how many Pancakes and how many Cupcakes he was able to eat and the number of calories in each portion.
+
+ 
+
+Here is some of the output from a sample run of my solution:
+
+ 
+
+Customer eats a cupcake with volume 223.54496474010787 and 894.1798589604315 calories
+
+Customer eats a cupcake with volume 132.34086943825238 and 529.3634777530095 calories
+
+Customer eats a pancake with radius 3.0434462755302483 and 30.434462755302484 calories
+
+ 
+
+[ many lines omitted)
+
+ 
+
+Customer eats a pancake with radius 5.825545170820019 and 58.2554517082002 calories
+
+Customer eats a cupcake with volume 216.41157767044317 and 865.6463106817727 calories
+
+Customer eats a cupcake with volume 291.2086902556894 and 1164.8347610227577 calories
+
+Customer ate 21 pancakes and 25 cupcakes before expiring
