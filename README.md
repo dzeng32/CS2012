@@ -1,6 +1,6 @@
 # CS2012
 CS 2012 Introduction to Programming II - 1
-Instructor: John Hurley
+
 
 Course Description:
 
